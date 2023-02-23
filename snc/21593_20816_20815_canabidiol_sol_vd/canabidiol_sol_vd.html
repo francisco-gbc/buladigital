@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" href="assets/img/produto/mockup_thumb.png">
+    <link rel="shortcut icon" href="/assets/img/Prati_fivecon.ico">
+    <link rel="stylesheet" href="../../assets/css/medicamentosStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../../assets/script/medicamentos_script.js"></script>
+    <title>Bula Digital - Prati-Donaduzzi</title>
+    <link rel="icon" href="../../assets/img/logo/Prati_fivecon.ico" type="image/x-icon">
+</head>
+
+<body id="corpo" class="container">
+
+    <div class="div">
+        <nav>
+            <div class="nav">
+                <div>
+                    <div class="logo">
+                        <a href="../../index.html" class="cabecalho_item"><img id="logo"
+                                src="../../assets/img/logo/logo_prati.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cabecalho">
+                    <div class="input_noturno">
+                        <div class="input">
+                            <input type="text" placeholder="Buscar produto" autofocus id="valor">
+                            <button onclick="armazenarValor()" id="pesquisar"></button>
+                        </div>
+                        <div class="noturno">
+                            <i id="mode_icon" class="fa-solid fa-moon" onclick="trocar()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="vazio">
+
+                </div>
+                <ul>
+                    <li><a id="todos" href="../../index.html">Todos</a></li>
+                    <li><a id="mips" href="../../mips.html">MIPs</a></li>
+                    <li><a id="alimentos" href="../../alimentos.html">Alimentos</a></li>
+                    <li><a id="genericos" href="../../genericos.html">Genéricos</a></li>
+                    <li><a id="snc" href="../../snc.html">SNC</a></li>
+                    <li><a href="../../contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!--Midia-->
+            <!--Titulo hide-->
+            <p class="titulo" id="titulo_mobile">Canabidiol - Solução</p>
+
+            <div class="midia">
+
+                <div class="medicamento">
+                    <img src="assets/img/produto/mockup.png" alt="mockup_medicamento"
+                        id="medicamento_grande">
+                    <img src="assets/img/produto/mockup_smart.png" alt="mockup_medicamento"
+                        id="medicamento_smart">
+                </div>
+
+                <div class="titulo_video_desk">
+
+                    <b><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;Modo de aplicação</b>
+                </div>
+
+                <div class="video_desk">
+                    <iframe width="640" height="360" src="https://player.vimeo.com/video/657911860?h"
+                        title="Vimeo video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!--Conteudo-->
+            <div class="conteudo">
+                <!--Titulo-->
+                <h1 class="titulo" id="titulo_desk">Canabidiol - Solução</h1>
+
+                <!--Descricao-->
+                <div class="descricao">
+                    <div>
+                        <p><b>Canabidiol Prati-Donaduzzi 20 mg/mL ou 50 mg/mL:</b><br>
+                            Solução oral em embalagem com 1 frasco de 30 mL acompanhado de 1, 2 ou 3 seringas
+                            dosadoras.<br><br>
+                            <b>Canabidiol Prati-Donaduzzi 200 mg/mL:</b><br>
+                            Solução oral em embalagem com 1 frasco de 30 mL acompanhado de seringa dosadora.<br><br>
+                            <b>USO ORAL.</b><br>
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+                <!--Download-->
+                <div class="download_bula">
+                    <a class="download_bula" href="assets/material/FOLHETO INFORMATIVO.pdf"><img
+                            src="../../assets/img/icons/doc.svg" alt="Download folheto informativo">
+                        <p>Download Folheto Informativo</p>
+                    </a>
+                </div>
+
+                <!--Video-->
+                <div class="video_mobile">
+                    <div class="titulo_video_mobile">
+                        <b><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;Modo de aplicação</b>
+                    </div>
+
+                    <div class="video_mobile">
+                        <iframe width="640" height="360" src="https://player.vimeo.com/video/657911860?h"
+                            title="Vimeo video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+
+                <!--modo de uso/ contraindicações / composição-->
+                <div id="info_adicional">
+                    <ul class="adicional">
+                        <li class="modo_uso">
+                            <button id="show_hide_1" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-file-medical"></i>Modo de Uso</div>
+                                <i id="plus_1" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_1">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/modo_uso.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Canabidiol Prati-Donaduzzi deve ser administrado por via oral com o auxílio de
+                                        seringa dosadora, logo
+                                        após as refeições.<br><br>
+                                        Para administrar este produto, gire a tampa no sentido anti-horário para romper
+                                        o
+                                        lacre.<br><br>
+                                        1. Coloque a tampa interna que acompanha a seringa dosadora no bocal do frasco
+                                        de
+                                        Canabidiol Prati-Donaduzzi.<br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_1.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>2. Encaixe a seringa dosadora no orifício da tampa interna do frasco.<br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_2.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>3. Confirme se o êmbolo da seringa está totalmente para baixo.<br><br>
+                                        4. Segure a seringa e cuidadosamente vire o frasco de cabeça para baixo.<br><br>
+                                        5. Puxe lentamente o êmbolo, para que a seringa se encha com o produto de
+                                        Cannabis,
+                                        medindo a
+                                        quantidade exata em mL, até a marca correspondente à dosagem indicada pelo
+                                        médico
+                                        para o paciente. <br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_5.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>6. Desvire o frasco e retire a seringa dosadora. <br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_6.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>7. Se perceber a presença de bolha de ar na seringa, encaixe novamente a seringa
+                                        no
+                                        frasco e com o frasco
+                                        de cabeça para baixo, empurre o êmbolo, de modo que todo o líquido volte para o
+                                        frasco.<br><br>
+                                        8. Repita o passo 5 até que consiga dosar o produto sem a presença de
+                                        bolhas.<br><br>
+                                        9. Administre o conteúdo da seringa diretamente na boca do paciente. Jamais
+                                        direcione o produto para a
+                                        região da garganta, pois isto pode causar afogamento. <br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_9.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>10. Tampe o frasco sem retirar a tampa interna. <br><br></p>
+                                    <img width="200" src="assets/img/modo_uso/uso_10.png" alt="Modo de uso 1"
+                                        id="modo_uso">
+                                    <p>11. Após a administração, lave a seringa com água corrente e detergente neutro e,
+                                        guarde-a na respectiva
+                                        caixa para que possa ser utilizada novamente.<br><br>
+                                        Não se recomenda agitar o produto.<br><br>
+                                        Não utilize a seringa se estiver molhada. Se tiver água dentro da seringa, esta
+                                        poderá afetar as
+                                        características do produto de Cannabis.<br><br>
+                                        A seringa dosadora é de uso exclusivo para administração de Canabidiol
+                                        Prati-Donaduzzi e não deve ser
+                                        utilizada para administração de outros produtos.<br><br>
+                                        O manuseio da seringa dosadora deve ser feito somente por adultos.<br><br>
+                                    <h3>Posologia</h3><br>
+                                    A posologia de Canabidiol Prati-Donaduzzi pode variar de acordo com características
+                                    e
+                                    gravidade da
+                                    patologia, idade, peso corporal, uso de medicamentos pelo paciente e resposta
+                                    clínica.<br><br>
+                                    A literatura cita a administração de canabidiol em doses entre 2,5 e 25 mg/Kg/dia,
+                                    sendo
+                                    a dose aumentada
+                                    gradualmente. No entanto, o médico deve definir a dose de tratamento com base na
+                                    resposta clínica
+                                    favorável e tolerabilidade ao produto de Cannabis, sendo necessário monitoramento
+                                    periódico das funções
+                                    hepáticas. Caso seja necessária a interrupção da utilização do produto, recomenda-se
+                                    que
+                                    a dose seja reduzida gradualmente e nunca abruptamente.<br><br>
+                                    Siga a orientação de seu médico, respeitando sempre os horários, as doses e a
+                                    duração do
+                                    tratamento.<br><br>
+                                    Não interrompa o tratamento sem o conhecimento do seu médico.
+                                    <br><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="contraindicacoes">
+                            <button id="show_hide_2" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-triangle-exclamation"></i>Contraindicações
+                                </div>
+                                <i id="plus_2" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_2">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/contraindicacao.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Pacientes com histórico de hipersensibilidade e alergia a qualquer um dos
+                                        componentes
+                                        da fórmula não
+                                        devem fazer uso de Canabidiol Prati-Donaduzzi.<br><br>
+                                        Este produto não deve ser utilizado por pacientes usuários de drogas de
+                                        abuso.<br><br>
+                                        Este produto não deve ser utilizado em crianças menores de 2 (dois) anos de
+                                        idade.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="composicao">
+                            <button id="show_hide_3" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-flask"></i>Composição</div>
+                                <i id="plus_3" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_3">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/composicao.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Cada mL de Canabidiol Prati-Donaduzzi 20 mg/mL solução contém:<br>
+                                        canabidiol..................................20 mg<br>
+                                        veículo q.s.p.............................1 mL<br>
+                                        Excipientes: óleo de milho e butil-hidroxianisol.<br><br>
+                                        Cada mL de Canabidiol Prati-Donaduzzi 50 mg/mL solução contém:<br>
+                                        canabidiol...................................50 mg<br>
+                                        veículo q.s.p.............................1 mL<br>
+                                        Excipientes: óleo de milho e butil-hidroxianisol.<br><br>
+                                        Cada mL de Canabidiol Prati-Donaduzzi 200 mg/mL solução contém:<br>
+                                        canabidiol.................................. 200 mg<br>
+                                        veículo q.s.p............................ 1 mL<br>
+                                        Excipientes: óleo de milho e butil-hidroxianisol. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <!--Assinatura-rodapé-->
+        <div>
+            <ul>
+                <li><a href="https://www.pratidonaduzzi.com.br/">www.pratidonaduzzi.com.br</a></li>
+                <li>Copyright © Prati-Donaduzzi. Todos os direitos reservados.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

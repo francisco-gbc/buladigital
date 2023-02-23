@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/listaStyle.css">
+    <link rel="icon" href="assets/img/logo/Prati_fivecon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="assets/script/lista.js"></script>
+    <script type="text/javascript" src="assets/script/buscarLista.js"></script>
+    <style>/*Lista - Display:none*/.snc,.alimento,.genérico{display: none;}.mip{display: flex;}</style>
+</head>
+
+<body class="container">
+    <div class="div">
+        <nav>
+            <div class="nav">
+                <div>
+                    <div class="logo">
+                        <a href="index.html"><img id="logo" src="assets/img/logo/logo_prati.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cabecalho">
+                    <div class="input_noturno">
+                        <div class="input">
+                            <input type="text" placeholder="Buscar produto" autofocus id="inputPesquisa">
+                            <button onclick="armazenarValor()" id="pesquisar"></button>
+                        </div>
+                        <div class="noturno">
+                            <i id="mode_icon" class="fa-solid fa-moon" onclick="trocar()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="vazio">
+
+                </div>
+                <ul>
+                    <li><a id="todos" href="index.html">Todos</a></li>
+                    <li><a id="mips" href="mips.html">MIPs</a></li>
+                    <li><a id="alimentos" href="alimentos.html">Alimentos</a></li>
+                    <li><a id="genericos" href="genericos.html">Genéricos</a></li>
+                    <li><a id="snc" href="snc.html">SNC</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="titulo_legenda">
+
+            <!--Titulo página-->
+            <div class="titulo">
+                <h1>Medicamentos Isentos de Precrição</h1>
+            </div>
+
+            <!--Tabela-->
+            <div id="listaRegistros">
+                <table class="lista">
+                    <!--Cabeçalho Lista-->
+                    <thead class="legenda">
+                        <tr class="legenda_tr">
+                            <td class="produto"><b>Imagem</b>
+                                <p>Produto</p>
+                            </td>
+                            <td class="apresentacao">Apresentação</td>
+                            <td class="referencia">Referência</td>
+                            <td class="n_registro">Nº Registro</td>
+                            <td class="categoria">Categoria</td>
+                            <td class="bula">Bula</td>
+                        </tr>
+                    </thead>
+                    <!--Corpo Lista-->
+                    <tbody id="listaRegistrosBody"></tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <main>
+            <!--Caso não apareça o resultado da pesquisa-->
+            <div class="erro">
+                <img id="img_erro" src="assets/img/avisos/erro_pesquisa.svg" alt="">
+                <p class="erro1">Ops! Não encontramos nada aqui! Verifique se não ocorreu um erro
+                    de digitação.</p>
+                <p class="erro2">Caso o erro percista entre em contato através da nossa <a
+                        href="https://www.pratidonaduzzi.com.br/contato/fale-conosco/formcac">Central de Atendimento ao
+                        Consumidor (CAC)</a> ou pela <a href="http://ouvidoria.pratidonaduzzi.com.br/?lang=pt_br">nossa
+                        Ouvidoria</a></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <!--Assinatura-rodapé-->
+        <div>
+            <ul>
+                <li><a href="www.pratidonaduzzi.com.br">www.pratidonaduzzi.com.br</a></li>
+                <li>Copyright © Prati-Donaduzzi. Todos os direitos reservados.</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

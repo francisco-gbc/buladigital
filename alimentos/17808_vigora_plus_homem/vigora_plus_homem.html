@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" href="assets/img/produto/mockup_thumb.png">
+    <link rel="shortcut icon" href="/assets/img/Prati_fivecon.ico">
+    <link rel="stylesheet" href="../../assets/css/medicamentosStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../../assets/script/medicamentos_script.js"></script>
+    <title>Bula Digital - Prati-Donaduzzi</title>
+    <link rel="icon" href="../../assets/img/logo/Prati_fivecon.ico" type="image/x-icon">
+</head>
+
+<body id="corpo" class="container">
+
+    <div class="div">
+        <nav>
+            <div class="nav">
+                <div>
+                    <div class="logo">
+                        <a href="../../index.html" class="cabecalho_item"><img id="logo"
+                                src="../../assets/img/logo/logo_prati.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cabecalho">
+                    <div class="input_noturno">
+                        <div class="input">
+                            <input type="text" placeholder="Buscar produto" autofocus id="valor">
+                            <button onclick="armazenarValor()" id="pesquisar"></button>
+                        </div>
+                        <div class="noturno">
+                            <i id="mode_icon" class="fa-solid fa-moon" onclick="trocar()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="vazio">
+
+                </div>
+                <ul>
+                    <li><a id="todos" href="../../index.html">Todos</a></li>
+                    <li><a id="mips" href="../../mips.html">MIPs</a></li>
+                    <li><a id="alimentos" href="../../alimentos.html">Alimentos</a></li>
+                    <li><a id="genericos" href="../../genericos.html">Genéricos</a></li>
+                    <li><a id="snc" href="../../snc.html">SNC</a></li>
+                    <li><a href="../../contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!--Midia-->
+            <!--Titulo hide-->
+            <p class="titulo" id="titulo_mobile">Onaz - Olanzapina</p>
+
+            <div class="midia">
+
+                <div class="medicamento">
+                    <img src="assets/img/produto/mockup.png" alt="mockup_medicamento" id="medicamento_grande">
+                    <img src="assets/img/produto/mockup_smart.png" alt="mockup_medicamento" id="medicamento_smart">
+                </div>
+
+            </div>
+
+            <!--Conteudo-->
+            <div class="conteudo">
+                <!--Titulo-->
+                <h1 class="titulo" id="titulo_desk">Onaz - Olanzapina</h1>
+
+                <!--Descricao-->
+                <div class="descricao">
+                    <div>
+                        <p><b>Comprimido revestido de 2,5 mg ou 5 mg:</b><br> Embalagem com 10, 14, 15, 28, 30, 60 ou 90 comprimidos.<br><br>
+                            <b>Comprimido revestido de 10 mg:</b><br> Embalagem com 7, 10, 14, 15, 28, 30, 60 ou 90 comprimidos. <br><br>
+                            <b>USO ORAL.<br>
+                            USO ADULTO.    </b>
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+                <!--Download-->
+                <div class="download_bula">
+                    <a class="download_bula"
+                        href="https://consultas.anvisa.gov.br/api/consulta/medicamentos/arquivo/bula/parecer/eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxMTgzMzI3NiIsIm5iZiI6MTY3NjU0NzI0MSwiZXhwIjoxNjc2NTQ3NTQxfQ.pnc6L1J0FK8dxheVYXR_BvtfzrpwLHVL8YY7QnLPiOoV-W3MKDtfH-i7Z0SY6x6mPYKQIYuyFIuKjCgZJD2Xzw/?Authorization=Guest"><img
+                            src="../../assets/img/icons/doc.svg" alt="Download Bula Digital">
+                        <p>Download Bula Digital</p>
+                    </a>
+                </div>
+
+                <!--modo de uso/ contraindicações / composição-->
+                <div id="info_adicional">
+                    <ul class="adicional">
+                        <li class="modo_uso">
+                            <button id="show_hide_1" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-file-medical"></i>Modo de Uso</div>
+                                <i id="plus_1" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_1">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/modo_uso.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Este medicamento deve ser administrado por via oral, podendo ser tomado
+                                        independentemente das refeições.
+                                        <br><br>
+                                        <b>Posologia</b>
+                                        <br>
+                                        <b>Dose para pacientes com esquizofrenia e transtornos relacionados:</b> a dose
+                                        inicial recomendada é de 10 mg, administrada uma vez ao dia, independentemente
+                                        das refeições. A dose diária deve ser ajustada de acordo com a evolução clínica,
+                                        dentro da faixa de 5 a 20 mg. O aumento da dose diária acima daquela de rotina
+                                        (10 mg) só é recomendado após avaliação médica.
+                                        <br><br>
+                                        <b>Dose para pacientes com mania aguda associada ao transtorno bipolar:</b> a
+                                        dose inicial recomendada é de 15 mg, administrada uma vez ao dia em monoterapia,
+                                        ou de 10 mg administrada uma vez ao dia em combinação com lítio ou valproato,
+                                        independentemente das refeições. A dose diária deve ser ajustada de acordo com a
+                                        evolução clínica, dentro da faixa de 5 a 20 mg. O aumento de dose acima da
+                                        sugerida diariamente só é recomendado após avaliação médica e geralmente deve
+                                        ocorrer em intervalos não inferiores a 24 horas.
+                                        <br><br>
+                                        <b>Prevenção de recorrência do transtorno bipolar:</b> pacientes que já estavam
+                                        recebendo este medicamento para tratamento de episódio maníaco devem
+                                        inicialmente continuar o tratamento com a mesma dose. A dose inicial recomendada
+                                        é de 10 mg/dia para pacientes que já estão em remissão. A dose diária pode ser
+                                        subsequentemente ajustada com base na condição clínica individual, dentro da
+                                        variação de 5 a 20 mg/dia.
+                                        <br><br>
+                                        <b>Considerações gerais sobre a administração deste medicamento em populações
+                                            especiais: Dose para pacientes idosos:</b> uma dose inicial mais baixa (5
+                                        mg/dia) pode ser considerada para pacientes idosos ou quando fatores clínicos
+                                        justificarem tal dose. Dose para pacientes com insuficiência hepática (mau
+                                        funcionamento do fígado) ou renal (mau funcionamento dos rins): uma dose inicial
+                                        de 5 mg deve ser considerada para pacientes com insuficiência hepática moderada,
+                                        ou renal grave. Deve-se ter cautela para aumentar a dose. Pode ser considerada
+                                        uma dose inicial mais baixa em pacientes que exibem uma combinação de fatores
+                                        (sexo feminino, idoso e não fumante) que podem diminuir o metabolismo da
+                                        olanzapina.
+                                        <br><br>
+                                        O uso deste medicamento em monoterapia não foi estudado em pacientes com menos
+                                        de 13 anos de idade.
+                                        <br><br>
+                                        <b>Siga a orientação de seu médico, respeitando sempre os horários, as doses e a
+                                            duração do tratamento. Não interrompa o tratamento sem o conhecimento do seu
+                                            médico. Este medicamento não deve ser partido, aberto ou mastigado.</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="contraindicacoes">
+                            <button id="show_hide_2" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-triangle-exclamation"></i>Contraindicações
+                                </div>
+                                <i id="plus_2" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_2">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/contraindicacao.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Este medicamento não deve ser usado por pacientes alérgicos à olanzapina ou a
+                                        qualquer um dos componentes da formulação do medicamento.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="composicao">
+                            <button id="show_hide_3" class="show_hide">
+                                <div class="hide_name"><i class="fa-solid fa-flask"></i>Composição</div>
+                                <i id="plus_3" class="fa-solid fa-circle-plus"></i>
+                            </button>
+                            <div class="info_hide_3">
+                                <div class="audio">
+                                    <audio id="player" controls="controls">
+                                        <source src="assets/audio/composicao.mp3" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                                <div class="texto">
+                                    <p>Cada comprimido revestido de 2,5 mg contém:
+                                        olanzapina...................................................2,5 mg excipiente
+                                        q.s.p................................1 comprimido Excipientes: lactose,
+                                        estearato de
+                                        magnésio, celulose microcristalina, crospovidona, hipromelose, dióxido de
+                                        titânio e
+                                        macrogol.
+
+                                        Cada comprimido revestido de 5 mg contém:
+                                        olanzapina...................................................5 mg excipiente
+                                        q.s.p.............................1 comprimido Excipientes: lactose, estearato
+                                        de
+                                        magnésio, celulose microcristalina, crospovidona, hipromelose, dióxido de
+                                        titânio e
+                                        macrogol.
+
+                                        Cada comprimido revestido de 10 mg contém:
+                                        olanzapina...................................................10 mg excipiente
+                                        q.s.p................................1 comprimido Excipientes: lactose,
+                                        estearato de
+                                        magnésio, celulose microcristalina, crospovidona, hipromelose, dióxido de
+                                        titânio e
+                                        macrogol.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <!--Assinatura-rodapé-->
+        <div>
+            <ul>
+                <li><a href="https://www.pratidonaduzzi.com.br/">www.pratidonaduzzi.com.br</a></li>
+                <li>Copyright © Prati-Donaduzzi. Todos os direitos reservados.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
